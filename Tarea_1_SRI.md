@@ -28,13 +28,16 @@ docker run -it --name ubu1 ubuntu bash
 Con solo una línea de comando la creamos y al mismo tiempo accedemos a él.
 
 ## Comprueba que ip tiene y si puedes hacer un ping a google.com
-haces *ipconfig* y te das cuenta de que no tiene ip porque no tiene **net tools** haces *apt update y luego apt install net-tools, luego apt install iputils-ping* para poder hacer ping y ahora con *ifconfig* deberías ver la ip y con 
+haces *ifconfig* y te das cuenta de que no tiene ip porque no tiene **net tools** haces *apt update y luego apt install net-tools, luego apt install iputils-ping* para poder hacer ping y ahora con *ifconfig* deberías ver la ip y con 
 ~~~
 ping a 8.8.8.8
 ~~~
  te deberia salir<br/>
 ## Crea un contenedor con el nombre 'ubu2'. ¿Puedes hacer ping entre los contenedores?
-**docker run -it --name ubu2 ubuntu bash**<br/>
+~~~
+docker run -it --name ubu2 ubuntu bash
+~~~
+<br/>
 Creamos el contenedor y al igual que antes tienes que hacer actualizar, nettools y el
 iputils, ahora con ello hecho con ifconfig vemos la ip de ambos y en cualquiera de
 los dos deberíamos poder hacer ping (ip destino) y debería funcionar.
