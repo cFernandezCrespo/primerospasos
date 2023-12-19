@@ -19,4 +19,12 @@ Aquí tienes
 https://hub.docker.com/repository/docker/carlosferncres/examensri/general
 ~~~
 
-## Parte 2
+## Parte 2 
+
+### Apache virtual host 
+
+### 1)Crea un contenedor apache con dos virtual host que se distingan por el puerto
+
+### 2)Comprueba con el contenedor de alpine que accedes a dos páginas diferentes en distintos puertos
+
+### 3)Todo está integrado en un docker compose
